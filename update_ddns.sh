@@ -37,7 +37,7 @@ parserZone(){
 updateDns(){
     parserZone
     echo $KEYFILE
-    nsupdate -k '/usr/local/python/csvt_python/bind/Kmydns.+157+12843.key'  -v $DNSFILE 
+    nsupdate -k $KEYFILE  -v $DNSFILE 
 }
 
 updateDns
